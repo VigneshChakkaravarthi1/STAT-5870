@@ -20,9 +20,10 @@ row_max = np.max(x_new_t,axis=0)
 # (g) Find a sum of all values in x_new_t.
 total_sum = np.sum(x_new_t)
 # (h) Count how many values in x_new_t is either less than 20 or greater than 60.
-number_of_values = np.count_nonzero((x_new_t<20 | x_new_t >60))
+count = x_new_t[(x_new_t <20)|(x_new_t>60)].size
 # (i) If the values in x_new_t is greater than 30 then change it to 1 otherwise 2 and assign it to x_final.
 x_final= np.where(x_new_t >30,1,2)
+
 # (j) Sort each row of x_final in ascending order and assign it to x_final_sorted.
 x_final_sorted = np.sort(x_final)
 
