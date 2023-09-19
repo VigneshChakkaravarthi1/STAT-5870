@@ -32,7 +32,7 @@ np.random.seed(seed=1)
 y = np.random.randint(0, 100, 20)
 
 # (a) Find a subset of y which only contain numbers in the odd positions. For example, if your y = [5,10,15,20,25] then write a code to find [5,15,25].
-odd_positions = y[1::2]
+odd_positions = y[0::2]
 # (b) Find the mean and standard deviation of the subset you found in (a).
 mean_odd_posistions = np.mean(odd_positions)
 std_odd_positions = np.std(odd_positions)
